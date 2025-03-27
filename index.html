@@ -1,98 +1,342 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>NERD_CON 애니메이션</title>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      background: #111;
-    }
-    canvas {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <canvas id="canvas"></canvas>
-  <script>
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    
-    // 캔버스 크기를 창 크기에 맞게 설정
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    
-    // offscreen canvas 생성: 텍스트 "NERD_CON" 렌더링
-    const offCanvas = document.createElement('canvas');
-    const offCtx = offCanvas.getContext('2d');
-    offCanvas.width = canvas.width;
-    offCanvas.height = canvas.height;
-    
-    offCtx.fillStyle = 'white';
-    offCtx.font = 'bold 200px sans-serif';
-    offCtx.textAlign = 'center';
-    offCtx.textBaseline = 'middle';
-    offCtx.fillText('NERD_CON', offCanvas.width / 2, offCanvas.height / 2);
-    
-    // 텍스트 영역의 픽셀 데이터 추출
-    const imageData = offCtx.getImageData(0, 0, offCanvas.width, offCanvas.height);
-    const data = imageData.data;
-    
-    // 입자 배열 생성 (텍스트의 픽셀이 있는 곳에 입자 생성)
-    const particles = [];
-    const gap = 6; // 샘플링 간격
-    
-    for (let y = 0; y < offCanvas.height; y += gap) {
-      for (let x = 0; x < offCanvas.width; x += gap) {
-        const index = (y * offCanvas.width + x) * 4;
-        const alpha = data[index + 3];
-        if (alpha > 128) { // 해당 픽셀이 텍스트의 일부라면
-          particles.push({
-            x: Math.random() * canvas.width, // 초기 위치: 랜덤
-            y: Math.random() * canvas.height,
-            tx: x, // 목표 위치
-            ty: y,
-            vx: 0,
-            vy: 0
-          });
-        }
-      }
-    }
-    
-    // 애니메이션 파라미터 (속도 느리게: 낮은 ease 값)
-    const ease = 0.03; // 이동 완화 계수 (느리게)
-    
-    function animate() {
-      // 배경을 약간 투명하게 덮어 trail 효과 부여
-      ctx.fillStyle = 'rgba(17, 17, 17, 0.3)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      
-      ctx.fillStyle = '#00ffff'; // 입자 색상
-      
-      particles.forEach(p => {
-        const dx = p.tx - p.x;
-        const dy = p.ty - p.y;
-        p.vx = dx * ease;
-        p.vy = dy * ease;
-        p.x += p.vx;
-        p.y += p.vy;
-        
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      
-      requestAnimationFrame(animate);
-    }
-    animate();
-    
-    // 창 크기 변경시 캔버스 크기 조정
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
-  </script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="a.css" />
+    <link rel="stylesheet" href="b.css" />
+    <link rel="stylesheet" href="c.css" />
+  </head>
+  <body>
+    <div class="PC">
+      <div class="frame">
+        <div class="div main">
+          <div class="frame-2">
+            <div class="LOGO-white">
+              <img class="vector" src="img/image.png" />
+            </div>
+            <div class="frame-3">
+              <a href="#a" class="text-wrapper">세션 소개</a>
+              <a href="#b" class="text-wrapper">오시는 길</a>
+            </div>
+          </div>
+          <img class="vector" src="img/Group 10@1x.png" />
+          <img class="union" src="img/Union@1x.png" />
+          <img class="vector2" src="img/Vector 3@1x.png" />
+          <div class="frame-4">
+            <div class="frame-4">
+              <div class="frame-5">
+                <div class="frame-6">
+                  <div class="b">&lt;b&gt;</div>
+                  <div class="text-wrapper-2">몰입하는 내가 최고다</div>
+                  <div class="b-2">&lt;b/&gt;</div>
+                </div>
+                <div class="frame-7">
+                  <div class="frame-8">
+                    <div class="text-wrapper-3">
+                      2025. 05. 17(토)&nbsp;&nbsp;오후 2시
+                    </div>
+                    <div class="ellipse"></div>
+                    <p class="text-wrapper-3">서울 강남구 테헤란로 133 KURLY</p>
+                  </div>
+                  <p class="p">
+                    너드콘은 자신의 분야에 몰두하는 개발자들이 만들어가는
+                    컨퍼런스입니다.<br />최고의 기술과 경험을 공유해봐요.
+                  </p>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="text-wrapper-4">너드콘 신청하기</div>
+              </div>
+            </div>
+          </div>
+          <img class="union-2" src="img/Union@3x(2).png" />
+        </div>
+        <div class="frame-9">
+          <div class="frame-10">
+            <p class="text-wrapper-5">참가 신청은 4월 30일 까지!</p>
+            <p class="text-wrapper-6">
+              * 참가비 1만원은 너드콘 운영비로만 사용되며, 수익을 위한 용도로는
+              사용되지 않습니다.
+            </p>
+          </div>
+          <div class="frame-11">
+            <div class="frame-12">
+              <div class="div-2">
+                <div class="group-2">
+                  <div class="frame-13">
+                    <div class="frame-14">
+                      <div class="ellipse-2"></div>
+                      <div class="rectangle-2"></div>
+                    </div>
+                    <div class="frame-14">
+                      <div class="ellipse-2"></div>
+                      <div class="rectangle-2"></div>
+                    </div>
+                    <div class="frame-14">
+                      <div class="ellipse-2"></div>
+                      <div class="rectangle-2"></div>
+                    </div>
+                    <div class="frame-14">
+                      <div class="ellipse-2"></div>
+                      <div class="rectangle-2"></div>
+                    </div>
+                  </div>
+                  <img
+                    class="google-logo-png"
+                    src="img/google-2015-logo-png-1.png"
+                  />
+                </div>
+              </div>
+              <div class="frame-15">
+                <div class="text-wrapper-7">STEP 1</div>
+                <p class="text-wrapper-8">
+                  상단 [너드콘 신청하기] 버튼을 누르고,<br />구글폼 신청서를
+                  작성해 주세요.
+                </p>
+              </div>
+            </div>
+            <div class="frame-12">
+              <div class="overlap-group-wrapper">
+                <div class="div-2">
+                  <div class="rectangle-3"></div>
+                  <div class="text-wrapper-9">1만원</div>
+                </div>
+              </div>
+              <div class="frame-15">
+                <div class="text-wrapper-7">STEP 2</div>
+                <p class="text-wrapper-8">
+                  추첨 후 선정된 너드분께 입금 안내 메일이 갑니다.<br />하루안에
+                  1만원 입금하면 됩니다!
+                </p>
+              </div>
+            </div>
+            <div class="frame-12">
+              <div class="div-2">
+                <div class="group-3">
+                  <div class="overlap-group">
+                    <img class="rectangle-4" src="img/Group 24@1x.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="frame-15">
+                <div class="text-wrapper-7">STEP 3</div>
+                <p class="text-wrapper-8">
+                  입금 확인 후 ‘참가 확정 메일’을 보내드려요.<br />메일을 받으면
+                  신청 완료!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-16">
+          <div class="text-wrapper-11" id="a">SESSION</div>
+          <div class="line"></div>
+          <div class="frame-17">
+            <div class="frame-18">
+              <div class="frame-19"><div class="text-wrapper-12">1</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">14:00 ~ 14:20</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">백엔드개발자, llm으로 창업하다</p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/a.jpeg" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">
+                      황진성 / 컬리 3년차 백엔드개발자
+                    </p>
+                    <p class="text-wrapper-15">스프링 contributor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-18">
+              <div class="frame-19"><div class="text-wrapper-12">2</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">14:20 ~ 14:40</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">
+                    바야흐로 멀티패러다임 프로그래밍 시대
+                  </p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/b.png" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">유인동 / 마플 CTO</p>
+                    <p class="text-wrapper-15">
+                      전) 카카오, 멀티프로그래밍 저자
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-18">
+              <div class="frame-19"><div class="text-wrapper-12">3</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">14:40 ~ 15:00</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">
+                    알고리즘 한개로 1억, Quant 맛보기
+                  </p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/ddd.png" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">주홍철 / 어비스 CTO</p>
+                    <p class="text-wrapper-15">
+                      전) 네이버, 면접을 위한 CS전공지식노트 저자
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-24">
+              <div class="frame-19"><div class="text-wrapper-12">4</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">15:00 ~ 15:10</div>
+                  <div class="rectangle-5"></div>
+                  <div class="text-wrapper-13">BREAKTIME</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-25">
+              <div class="frame-19"><div class="text-wrapper-12">5</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">15:10 ~ 15:20</div>
+                  <div class="rectangle-5"></div>
+                  <div class="text-wrapper-13">라이트닝 토크</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-26">
+              <div class="frame-19"><div class="text-wrapper-12">6</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">15:20 ~ 15:40</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">
+                    오픈소스 ZERO RUNTIME CSS-IN-JS 개발한 썰
+                  </p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/d.webp" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">오정민 / 데브파이브 대표</p>
+                    <p class="text-wrapper-15">
+                      2023 대한민국 인물대상, 이토록 쉬운 HTML+CSS 저자
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-18">
+              <div class="frame-19"><div class="text-wrapper-12">7</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">15:40 ~ 16:00</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">
+                    개발보안대상이 알려주는 개발보안 가이드
+                  </p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/ddd.png" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">문성훈 / 가비아 백엔드 개발자</p>
+                    <p class="text-wrapper-15">
+                      스프링 contributor, 개발보안 대상
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-18">
+              <div class="frame-19"><div class="text-wrapper-12">8</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">16:00 ~ 16:20</div>
+                  <div class="rectangle-5"></div>
+                  <p class="text-wrapper-13">
+                    Node.js, APT, APT, APT 만큼 성능 올리기
+                  </p>
+                </div>
+                <div class="frame-22">
+                  <img class="ellipse-3" src="img/ddd.png" />
+                  <div class="frame-23">
+                    <p class="text-wrapper-14">
+                      김환수 / ToggleCampus 풀스택 개발자
+                    </p>
+                    <p class="text-wrapper-15">포항공대</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-27">
+              <div class="frame-19"><div class="text-wrapper-12">9</div></div>
+              <div class="frame-20">
+                <div class="frame-21">
+                  <div class="text-wrapper-13">16:20 ~ 18:00</div>
+                  <div class="rectangle-5"></div>
+                  <div class="text-wrapper-13">네트워킹</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-28">
+          <div class="text-wrapper-16" id="b">LOCATION</div>
+          <div class="frame-29">
+            <img class="rectangle-6" src="img/Rectangle 1@1x.png" />
+            <div class="frame-30">
+              <div class="frame-31">
+                <div class="frame-32">
+                  <div class="frame-33">
+                    <div class="text-wrapper-17">KURLY</div>
+                    <div class="text-wrapper-18">(한국타이어 빌딩 18층)</div>
+                  </div>
+                  <div class="text-wrapper-19">역삼역 4번 출구에서 157m</div>
+                </div>
+                <div class="frame-34">
+                  <div class="frame-35">
+                    <div class="text-wrapper-20">주소</div>
+                    <div class="text-wrapper-21">서울 강남구 테헤란로 133</div>
+                  </div>
+                  <div class="frame-35">
+                    <div class="text-wrapper-20">일자</div>
+                    <p class="text-wrapper-21">2025. 05. 17(토) 오후 2:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-36">
+                <div class="text-wrapper-22">
+                  <a
+                    href="https://naver.me/5l7kq7zb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >지도 링크</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-37">
+          <div class="text-wrapper-11">PARTNERS</div>
+          <!-- <div class="frame-38">
+            <div class="LOGO-AVISS">
+              <img class="AVISS" src="img/AVISS.png" />
+              <img class="LOGO-AVISS-2" src="img/LOGO-AVISS.png" />
+            </div>
+            <img class="hanbit-logo" src="img/hanbit-logo-940px-1.png" />
+            <img class="image" src="img/image-2.png" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -4,7 +4,59 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="a.css" />
     <link rel="stylesheet" href="b.css" />
-    <link rel="stylesheet" href="c.css" />
+    <link rel="stylesheet" href="c.css" /> 
+    <!-- ( < IE10 ) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+
+    <!-- 사이트 기본설정 영역 START -->
+    <!-- SEO -->
+    <meta name="title" content="너드콘" />
+    <meta
+      name="keywords"
+      content="개발자세미나, 큰돌천재, 개발자를 위한, 개발자에 의한"
+    />
+    <meta name="author" content="큰돌" />
+    <meta
+      name="description"
+      content="대한민국 최고의 개발자 세미나, 너드콘"
+    /> 
+    <meta name="Robots" content="index, follow" /> 
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AVISS" />
+    <meta property="og:image" content="img/og-img.jpg" />
+    <meta property="og:site_name" content="AVISS" />
+    <meta property="og:url" content="https://nerdcon.kr/" />
+    <meta
+      property="og:description"
+      content="대한민국 최고의 개발자 세미나, 너드콘"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:image" content="img/og-img.jpg" />
+    <meta
+      name="twitter:description"
+      content="대한민국 최고의 개발자 세미나, 너드콘"
+    />
+    <meta name="twitter:title" content="너드콘" />
+
+    <link rel="canonical" href="https://nerdcon.kr/" />
+    <!-- 대표 URL -->
+
+    <!-- Naver Webmaster Tool -->
+    <meta name="naver-site-verification" content="대한민국 최고의 개발자 세미나, 너드콘" />
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="대한민국 최고의 개발자 세미나, 너드콘" />
+
+    <link rel="image_src" href="img/og-img.jpg" />
+    <!-- 대표 이미지 --> 
+    <link rel="shortcut icon" href="img/Symbol_노랑.png" />
   </head>
   <body>
     <div class="PC">
@@ -12,14 +64,17 @@
         <div class="div main">
           <div class="frame-2">
             <div class="LOGO-white">
-              <img class="vector" src="img/image.png" />
+              <img class="vector-logo" src="img/image.png" />
             </div>
             <div class="frame-3">
               <a href="#a" class="text-wrapper">세션 소개</a>
               <a href="#b" class="text-wrapper">오시는 길</a>
             </div>
           </div>
-          <img class="vector" src="img/Group 10@1x.png" />
+          <picture>  
+            <source media="(max-width: 768px)" srcset="img/Symbol_보라.png">
+            <img class="vector" src="img/Group 10@1x.png" alt="Vector Image">
+          </picture> 
           <img class="union" src="img/Union@1x.png" />
           <img class="vector2" src="img/Vector 3@1x.png" />
           <div class="frame-4">
@@ -105,8 +160,8 @@
               <div class="frame-15">
                 <div class="text-wrapper-7">STEP 2</div>
                 <p class="text-wrapper-8">
-                  추첨 후 선정된 너드분께 입금 안내 메일이 갑니다.<br />하루안에
-                  1만원 입금하면 됩니다!
+                  추첨 후 선정되면 입금 안내 메일 도착!<br />하루안에 1만원
+                  입금하면 마무으리!
                 </p>
               </div>
             </div>
@@ -122,7 +177,7 @@
                 <div class="text-wrapper-7">STEP 3</div>
                 <p class="text-wrapper-8">
                   입금 확인 후 ‘참가 확정 메일’을 보내드려요.<br />메일을 받으면
-                  신청 완료!
+                  참가확정 완료!
                 </p>
               </div>
             </div>
@@ -130,13 +185,13 @@
         </div>
         <div class="frame-16">
           <div class="text-wrapper-11" id="a">SESSION</div>
-          <div class="line"></div>
           <div class="frame-17">
+            <div class="line"></div>
             <div class="frame-18">
               <div class="frame-19"><div class="text-wrapper-12">1</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">14:00 ~ 14:20</div>
+                  <div class="text-wrapper-13">14:00 ~ 14:25</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">백엔드개발자, llm으로 창업하다</p>
                 </div>
@@ -155,7 +210,7 @@
               <div class="frame-19"><div class="text-wrapper-12">2</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">14:20 ~ 14:40</div>
+                  <div class="text-wrapper-13">14:25 ~ 14:50</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">
                     바야흐로 멀티패러다임 프로그래밍 시대
@@ -166,7 +221,8 @@
                   <div class="frame-23">
                     <p class="text-wrapper-14">유인동 / 마플 CTO</p>
                     <p class="text-wrapper-15">
-                      전) 카카오, 멀티프로그래밍 저자
+                      전) 카카오개발자 / FxJS 메인테이너 / 함수형 자바스크립트
+                      프로그래밍 저자
                     </p>
                   </div>
                 </div>
@@ -176,7 +232,7 @@
               <div class="frame-19"><div class="text-wrapper-12">3</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">14:40 ~ 15:00</div>
+                  <div class="text-wrapper-13">14:50 ~ 15:10</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">
                     알고리즘 한개로 1억, Quant 맛보기
@@ -187,7 +243,8 @@
                   <div class="frame-23">
                     <p class="text-wrapper-14">주홍철 / 어비스 CTO</p>
                     <p class="text-wrapper-15">
-                      전) 네이버, 면접을 위한 CS전공지식노트 저자
+                      전) 네이버 개발자 / 인프런 C++ 코딩테스트 강사 / 면접을
+                      위한 CS전공지식노트 저자
                     </p>
                   </div>
                 </div>
@@ -197,7 +254,7 @@
               <div class="frame-19"><div class="text-wrapper-12">4</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">15:00 ~ 15:10</div>
+                  <div class="text-wrapper-13">15:10 ~ 15:20</div>
                   <div class="rectangle-5"></div>
                   <div class="text-wrapper-13">BREAKTIME</div>
                 </div>
@@ -207,7 +264,7 @@
               <div class="frame-19"><div class="text-wrapper-12">5</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">15:10 ~ 15:20</div>
+                  <div class="text-wrapper-13">15:20 ~ 15:30</div>
                   <div class="rectangle-5"></div>
                   <div class="text-wrapper-13">라이트닝 토크</div>
                 </div>
@@ -217,7 +274,7 @@
               <div class="frame-19"><div class="text-wrapper-12">6</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">15:20 ~ 15:40</div>
+                  <div class="text-wrapper-13">15:30 ~ 15:55</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">
                     오픈소스 ZERO RUNTIME CSS-IN-JS 개발한 썰
@@ -238,18 +295,19 @@
               <div class="frame-19"><div class="text-wrapper-12">7</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">15:40 ~ 16:00</div>
+                  <div class="text-wrapper-13">15:55 ~ 16:20</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">
-                    개발보안대상이 알려주는 개발보안 가이드
+                    주니어를 위한, 안전한 소프트웨어 만들기
                   </p>
                 </div>
                 <div class="frame-22">
-                  <img class="ellipse-3" src="img/ddd.png" />
+                  <img class="ellipse-3" src="img/1.png" />
                   <div class="frame-23">
                     <p class="text-wrapper-14">문성훈 / 가비아 백엔드 개발자</p>
                     <p class="text-wrapper-15">
-                      스프링 contributor, 개발보안 대상
+                      전) 국내 화이트해킹팀 멤버 / 대한민국 SW 개발보안대회
+                      과학기술부장관상
                     </p>
                   </div>
                 </div>
@@ -259,7 +317,7 @@
               <div class="frame-19"><div class="text-wrapper-12">8</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">16:00 ~ 16:20</div>
+                  <div class="text-wrapper-13">16:20 ~ 16:45</div>
                   <div class="rectangle-5"></div>
                   <p class="text-wrapper-13">
                     Node.js, APT, APT, APT 만큼 성능 올리기
@@ -280,7 +338,7 @@
               <div class="frame-19"><div class="text-wrapper-12">9</div></div>
               <div class="frame-20">
                 <div class="frame-21">
-                  <div class="text-wrapper-13">16:20 ~ 18:00</div>
+                  <div class="text-wrapper-13">16:45 ~ 18:00</div>
                   <div class="rectangle-5"></div>
                   <div class="text-wrapper-13">네트워킹</div>
                 </div>
@@ -327,14 +385,10 @@
         </div>
         <div class="frame-37">
           <div class="text-wrapper-11">PARTNERS</div>
-          <!-- <div class="frame-38">
-            <div class="LOGO-AVISS">
-              <img class="AVISS" src="img/AVISS.png" />
-              <img class="LOGO-AVISS-2" src="img/LOGO-AVISS.png" />
-            </div>
-            <img class="hanbit-logo" src="img/hanbit-logo-940px-1.png" />
-            <img class="image" src="img/image-2.png" />
-          </div> -->
+          <div class="frame-38">
+            <img class="circle-logo" src="img/logo_sns_marketkurly.jpg" />
+            <img class="LOGO-AVISS-2" src="img/LOGO_AVISS@1x.png" />
+          </div>
         </div>
       </div>
     </div>

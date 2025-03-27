@@ -1,209 +1,1254 @@
+/* 기본 PC 스타일 */
 .PC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--graywhite);
+}
+
+.PC .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PC .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 120px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #010101;
+}
+
+.main {
+  color: white;
+}
+
+.PC .vector2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.PC .union {
+  position: absolute;
+  top: 600px;
+  right: 0;
+}
+
+.PC .frame-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PC .LOGO-white {
+  position: relative;
+  width: 136px;
+  height: 28px;
+}
+
+.PC .img {
+  position: absolute;
+  width: 98px;
+  height: 13px;
+  top: 10px;
+  left: 38px;
+}
+
+.PC .symbol-white {
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  top: 0;
+  left: 0;
+}
+
+.PC .frame-3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--headline-17-b-font-family);
+  font-weight: var(--headline-17-b-font-weight);
+  color: var(--graywhite);
+  font-size: var(--headline-17-b-font-size);
+  text-align: center;
+  letter-spacing: var(--headline-17-b-letter-spacing);
+  line-height: var(--headline-17-b-line-height);
+  white-space: nowrap;
+  font-style: var(--headline-17-b-font-style);
+}
+
+.PC .frame-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .group {
+  position: relative;
+  width: 430px;
+  height: 430px;
+}
+
+.PC .frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-6 {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .b {
+  position: relative;
+  width: 148px;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #585a69;
+  font-size: 60px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 84px;
+}
+
+.PC .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 84px;
+  white-space: nowrap;
+}
+
+.PC .b-2 {
+  position: relative;
+  width: 148px;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #585a69;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 84px;
+}
+
+.PC .frame-7 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-8 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard", Helvetica;
+  font-weight: 600;
+  color: var(--graywhite);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PC .ellipse {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: var(--graygy-600);
+  border-radius: 2px;
+}
+
+.PC .p {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard", Helvetica;
+  font-weight: 400;
+  color: var(--graygy-500);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 25.6px;
+}
+
+.PC .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #6131f0;
+  border-radius: 12px;
+  box-shadow: 0px 8px 0px #330da3;
+}
+
+.PC .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--title-26-b-font-family);
+  font-weight: var(--title-26-b-font-weight);
+  color: var(--graywhite);
+  font-size: var(--title-26-b-font-size);
+  letter-spacing: var(--title-26-b-letter-spacing);
+  line-height: var(--title-26-b-line-height);
+  white-space: nowrap;
+  font-style: var(--title-26-b-font-style);
+}
+
+.PC .union-2 {
+  position: absolute;
+  width: 202px;
+  height: 188px;
+  top: 226px;
+  left: 169px;
+}
+
+.PC .frame-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #1c1d24;
+}
+
+.PC .rectangle {
+  position: absolute;
+  width: 226px;
+  height: 60px;
+  top: 104px;
+  left: 917px;
+}
+
+.PC .frame-10 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 70px;
+  white-space: nowrap;
+}
+
+.PC .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--body-15-r-font-family);
+  font-weight: var(--body-15-r-font-weight);
+  color: #6f6f76;
+  font-size: var(--body-15-r-font-size);
+  text-align: center;
+  letter-spacing: var(--body-15-r-letter-spacing);
+  line-height: var(--body-15-r-line-height);
+  white-space: nowrap;
+  font-style: var(--body-15-r-font-style);
+}
+
+.frame-10 {
+  color: white;
+}
+
+.PC .frame-11 {
+  display: flex;
+  max-width: 1140px; /* 최대 너비 */
+  width: 100%; /* 너비가 1140px 이하면 100% */
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.PC .div-2 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background-color: #32343d;
+  border-radius: 120px;
+}
+
+.PC .group-2 {
+  position: relative;
+  width: 100px;
+  height: 128px;
+  top: 56px;
+  left: 70px;
+  background-image: url(./img/Group_25@1x.png);
+  background-size: 100% 100%;
+}
+
+.PC .vector-2 {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  left: 81px;
+}
+
+.PC .frame-13 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  position: absolute;
+  top: 61px;
+  left: 22px;
+}
+
+.PC .frame-14 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .ellipse-2 {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background-color: var(--graygy-600);
+  border-radius: 3px;
+}
+
+.PC .rectangle-2 {
+  position: relative;
+  width: 43px;
+  height: 4px;
+  background-color: var(--graygy-600);
+}
+
+.PC .google-logo-svg {
+  position: absolute;
+  width: 58px;
+  height: 20px;
+  top: 30px;
+  left: 21px;
+  object-fit: cover;
+}
+
+.PC .frame-15 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "SDMiSaeng", Helvetica;
+  font-weight: 400;
+  color: #9071ff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PC .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--graygy-100);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28.8px;
+}
+
+.PC .overlap-group-wrapper {
+  position: relative;
+  width: 242px;
+  height: 240px;
+}
+
+.PC .rectangle-3 {
+  position: absolute;
+  width: 128px;
+  height: 80px;
+  top: 80px;
+  left: 56px;
+  background-color: #32bb7d;
+  border: 8px solid;
+  border-color: #0d915d;
+}
+
+.PC .text-wrapper-9 {
+  position: absolute;
+  top: 105px;
+  left: 87px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #0a5721;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 1.04px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PC .group-3 {
+  position: relative;
+  width: 102px;
+  height: 103px;
+  top: 61px;
+  left: 70px;
+}
+
+.PC .overlap-group {
+  position: relative;
+  width: 100px;
+  height: 101px;
+  top: 2px;
+}
+
+.frame-28 {
+  color: white;
+}
+
+.frame-11 {
+  color: white;
+}
+
+.PC .vector-3 {
+  position: absolute;
+  width: 100px;
+  height: 39px;
+  top: 39px;
+  left: 0;
+}
+
+.PC .vector-4 {
+  position: absolute;
+  width: 100px;
+  height: 39px;
+  top: 0;
+  left: 0;
+}
+
+.PC .text-wrapper-10 {
+  position: absolute;
+  width: 31px;
+  top: 19px;
+  left: 34px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+.PC .frame-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 0px 140px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graygy-900);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 70px;
+  white-space: nowrap;
+}
+
+.PC .frame-17 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  position: relative;
+  flex: 0 0 auto;
+
+}
+
+.PC .frame-18 {
+  display: flex;
+  width: 648px;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-19 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 6px 5px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #6131f0;
+  border-radius: 50px;
+}
+
+.PC .text-wrapper-12 {
+  position: relative;
+  width: 24px;
+  margin-top: -1px;
+  font-family: var(--headline-18-b-font-family);
+  font-weight: var(--headline-18-b-font-weight);
+  color: var(--graywhite);
+  font-size: var(--headline-18-b-font-size);
+  text-align: center;
+  letter-spacing: var(--headline-18-b-letter-spacing);
+  line-height: var(--headline-18-b-line-height);
+  font-style: var(--headline-18-b-font-style);
+}
+
+.PC .frame-20 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+ 
+
+.PC .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--title-22-b-font-family);
+  font-weight: var(--title-22-b-font-weight);
+  color: var(--graygy-900);
+  font-size: var(--title-22-b-font-size);
+  letter-spacing: var(--title-22-b-letter-spacing);
+  line-height: var(--title-22-b-line-height);
+  white-space: nowrap;
+  font-style: var(--title-22-b-font-style);
+}
+
+.PC .rectangle-5 {
+  position: relative;
+  width: 1px;
+  height: 14px;
+  background-color: var(--graygy-400);
+}
+
+.PC .frame-22 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PC .ellipse-3 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.PC .frame-23 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--body-15-SB-font-family);
+  font-weight: var(--body-15-SB-font-weight);
+  color: var(--graygy-800);
+  font-size: var(--body-15-SB-font-size);
+  letter-spacing: var(--body-15-SB-letter-spacing);
+  line-height: var(--body-15-SB-line-height);
+  white-space: nowrap;
+  font-style: var(--body-15-SB-font-style);
+  font-size: 18px;
+}
+
+.PC .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--body-15-r-font-family);
+  font-weight: var(--body-15-r-font-weight);
+  color: var(--graygy-800);
+  font-size: var(--body-15-r-font-size);
+  letter-spacing: var(--body-15-r-letter-spacing);
+  line-height: var(--body-15-r-line-height);
+  white-space: nowrap;
+  font-style: var(--body-15-r-font-style);
+}
+
+.PC .frame-24 {
+  display: flex;
+  width: 380px;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-25 {
+  display: flex; 
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-26 {
+  display: flex; 
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-27 {
+  display: flex; 
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-28 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 0px 120px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #111216;
+}
+
+.PC .text-wrapper-16 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 70px;
+  white-space: nowrap;
+}
+
+.PC .frame-29 {
+  display: flex;
+  max-width: 1140px; /* 최대 너비 */
+  width: 100%; /* 화면 너비가 1140px 이하일 때 100% */
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .rectangle-6 {
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+}
+
+.PC .frame-30 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 70px;
+  padding: 24px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.PC .frame-31 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-32 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-33 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-17 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.PC .text-wrapper-18 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PC .text-wrapper-19 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graywhite);
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PC .frame-34 {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .frame-35 {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PC .text-wrapper-20 {
+  color: var(--graygy-500);
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--headline-17-m-font-family);
+  font-weight: var(--headline-17-m-font-weight);
+  font-size: var(--headline-17-m-font-size);
+  letter-spacing: var(--headline-17-m-letter-spacing);
+  line-height: var(--headline-17-m-line-height);
+  white-space: nowrap;
+  font-style: var(--headline-17-m-font-style);
+}
+
+.PC .text-wrapper-21 {
+  color: var(--graygy-300);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--headline-17-m-font-family);
+  font-weight: var(--headline-17-m-font-weight);
+  font-size: var(--headline-17-m-font-size);
+  letter-spacing: var(--headline-17-m-letter-spacing);
+  line-height: var(--headline-17-m-line-height);
+  white-space: nowrap;
+  font-style: var(--headline-17-m-font-style);
+}
+
+.PC .frame-36 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 28px 17px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #6131f0;
+  border-radius: 8px;
+}
+
+.PC .text-wrapper-22 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--headline-18-b-font-family);
+  font-weight: var(--headline-18-b-font-weight);
+  color: var(--graywhite);
+  font-size: var(--headline-18-b-font-size);
+  letter-spacing: var(--headline-18-b-letter-spacing);
+  line-height: var(--headline-18-b-line-height);
+  white-space: nowrap;
+  font-style: var(--headline-18-b-font-style);
+}
+
+.PC .frame-37 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 100px 0px 120px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--graywhite);
+}
+
+.PC .frame-38 {
+  display: flex;
+  max-width: 1140px; /* 최대 너비 */
+  width: 100%; /* 화면 너비가 1140px 이하일 때 100% */
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0px 30px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--graygy-100);
+  border-radius: 12px;
+
+  flex-direction: column;
+}
+
+.PC .AVISS {
+  position: absolute;
+  width: 126px;
+  height: 32px;
+  top: 9px;
+  left: 59px;
+}
+
+.PC .hanbit-logo {
+  position: relative;
+  width: 231px;
+  height: 38px;
+  object-fit: cover;
+}
+
+.PC .image {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.frame-16 {
+  position: relative;
+}
+
+.circle-logo {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.frame-17 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+picture {
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.frame-8 {
+  align-items: center;
+}
+/* 번호와 라인을 위한 스타일 */
+.frame-18 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px; /* 세션 사이 간격 */
+}
+
+.frame-19 {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%; /* 원형 번호 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* 번호가 라인 위에 오도록 */
+}
+
+/* 번호들을 잇는 라인 */
+.line {
+  position: absolute;
+  left: 15px; /* 번호 원 중심(반지름)과 맞춤 */
+  top: 15px; /* 첫 번째 번호의 중심에서 시작 */
+  width: 1px;
+  height: calc(100% - 15px); /* 전체 번호를 연결 */
+  background-color: var(--graygy-300);
+  z-index: 1;
+}
+
+.PC .frame-21 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto; 
+}
+/* 모바일 전용 CSS (.MO) – PC CSS를 기반으로 재조정 */
+
+@media (max-width: 768px) {
+  /* 전체 컨테이너 */
+  .PC {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     background-color: var(--graywhite);
   }
-  
+
+  /* 공통 프레임 */
   .PC .frame {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    align-self: stretch;
     width: 100%;
+    position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* 메인 콘텐츠 영역 */
   .PC .div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0px 0px 120px;
-    position: relative;
-    align-self: stretch;
+    padding: 0 0 80px; /* PC: 120px → 모바일: 80px */
     width: 100%;
-    flex: 0 0 auto;
     background-color: #010101;
+    position: relative;
+    flex: 0 0 auto;
   }
-  .main{
+
+  /* 텍스트 색상은 그대로 유지 */
+  .main {
     color: white;
   }
-  .PC .vector2 { 
-    
+
+  /* 하단 및 좌측 고정 요소 */
+  .PC .vector2 {
     position: absolute;
     bottom: 0;
     left: 0;
   }
-  
+
   .PC .union {
     position: absolute;
-    top: 600px;
+    /* PC는 top:600px; 모바일에서는 위치를 낮추어 보정 */
+    top: 200px;
     right: 0;
   }
-  
+
+  /* 헤더 – .frame-2 */
   .PC .frame-2 {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 30px 40px 20px;
-    position: relative;
-    align-self: stretch;
+    padding: 30px 20px 20px; /* PC: 30px 40px 20px */
     width: 100%;
+    position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* 로고 */
   .PC .LOGO-white {
     position: relative;
-    width: 136px;
-    height: 28px;
+    /* PC: 136×28 → 모바일: 약 120×25 */
+    width: 120px;
+    height: 25px;
   }
-  
+
+  /* 로고 하위 이미지 – 필요 시 축소 */
   .PC .img {
     position: absolute;
-    width: 98px;
-    height: 13px;
+    width: 85px;
+    height: 11px;
     top: 10px;
-    left: 38px;
+    left: 30px;
   }
-  
+
+  /* 심볼 */
   .PC .symbol-white {
     position: absolute;
-    width: 32px;
-    height: 28px;
+    width: 28px;
+    height: 25px;
     top: 0;
     left: 0;
   }
-  
+
+  /* 내비게이션 메뉴 (.frame-3) */
   .PC .frame-3 {
     display: inline-flex;
     align-items: center;
-    gap: 36px;
+    gap: 16px; /* PC: 36px → 모바일: 16px */
     position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* 메뉴 텍스트 */
   .PC .text-wrapper {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
+    margin-top: -1px;
     font-family: var(--headline-17-b-font-family);
     font-weight: var(--headline-17-b-font-weight);
     color: var(--graywhite);
-    font-size: var(--headline-17-b-font-size);
+    /* PC 폰트 크기(예: 60px) 대비 모바일는 약 32px ~ 36px */
+    font-size: 32px;
     text-align: center;
     letter-spacing: var(--headline-17-b-letter-spacing);
-    line-height: var(--headline-17-b-line-height);
+    line-height: 1.2;
     white-space: nowrap;
     font-style: var(--headline-17-b-font-style);
   }
-  
+
+  /* 메인 타이틀 영역 (.frame-4) */
   .PC .frame-4 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 40px; /* PC: 60px → 모바일: 40px */
+    padding: 0 20px;
+    width: 100%;
     position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* 그룹 이미지 (원형 등) – PC .group */
   .PC .group {
     position: relative;
-    width: 430px;
-    height: 430px;
+    /* PC: 430×430 → 모바일: 축소된 크기 (예: 260×260) */
+    width: 260px;
+    height: 260px;
   }
-  
+
+  /* 단계별 안내 영역 (.frame-5) */
   .PC .frame-5 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 40px; /* PC: 40px 혹은 40~60px → 모바일: 40px로 동일하게 */
     position: relative;
     flex: 0 0 auto;
+    width: 100%;
   }
-  
+
+  /* 기타 콘텐츠 영역 (.frame-6, .frame-7) */
   .PC .frame-6 {
     display: inline-flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 축소 */
+    width: 100%;
     position: relative;
     flex: 0 0 auto;
   }
-  
-  .PC .b {
-    position: relative;
-    width: 148px;
-    margin-top: -1.00px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: #585a69;
-    font-size: 60px;
-    text-align: right;
-    letter-spacing: 0;
-    line-height: 84.0px;
-  }
-  
-  .PC .text-wrapper-2 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: var(--graywhite);
-    font-size: 60px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 84.0px;
-    white-space: nowrap;
-  }
-  
-  .PC .b-2 {
-    position: relative;
-    width: 148px;
-    margin-top: -1.00px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: #585a69;
-    font-size: 60px;
-    letter-spacing: 0;
-    line-height: 84.0px;
-  }
-  
   .PC .frame-7 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
     position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* 타이틀 텍스트 – .b, .text-wrapper-2, .b-2 */
+  .PC .b {
+    position: relative;
+    margin-top: -1px;
+    font-family: "Gmarket Sans TTF-Bold", Helvetica;
+    font-weight: 700;
+    color: #585a69;
+    /* PC: 60px → 모바일: 약 40px */
+    font-size: 40px;
+    text-align: right;
+    line-height: 1.2;
+    white-space: nowrap;
+    display: none;
+  }
+  .PC .text-wrapper-2 {
+    position: relative;
+    margin-top: -1px;
+    font-family: "Gmarket Sans TTF-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--graywhite);
+    /* PC: 60px → 모바일: 약 40px~44px */
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .PC .b-2 {
+    position: relative;
+    margin-top: -1px;
+    font-family: "Gmarket Sans TTF-Bold", Helvetica;
+    font-weight: 700;
+    color: #585a69;
+    font-size: 40px;
+    white-space: nowrap;
+    display: none;
+  }
+
+  /* 서브 텍스트 영역 – .frame-8, .text-wrapper-3, .ellipse, .p */
   .PC .frame-8 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
     position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .text-wrapper-3 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Pretendard-SemiBold", Helvetica;
+    margin-top: -1px;
+    font-family: "Pretendard", Helvetica;
     font-weight: 600;
     color: var(--graywhite);
-    font-size: 20px;
+    /* PC에서 20px → 모바일: 약 18px */
+    font-size: 18px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
     white-space: nowrap;
   }
-  
   .PC .ellipse {
     position: relative;
     width: 4px;
@@ -211,773 +1256,409 @@
     background-color: var(--graygy-600);
     border-radius: 2px;
   }
-  
   .PC .p {
     position: relative;
-    width: fit-content;
-    font-family: "Pretendard-Regular", Helvetica;
+    font-family: "Pretendard", Helvetica;
     font-weight: 400;
     color: var(--graygy-500);
-    font-size: 16px;
+    /* PC 16px → 모바일: 14px */
+    font-size: 14px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: 25.6px;
   }
-  
+
+  /* 안내 박스 – .div-wrapper */
   .PC .div-wrapper {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 320px;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 24px 0px;
-    position: relative;
-    flex: 0 0 auto;
+    padding: 20px 0;
     background-color: #6131f0;
     border-radius: 12px;
     box-shadow: 0px 8px 0px #330da3;
+    position: relative;
+    flex: 0 0 auto;
   }
-  
+
+  /* 안내 박스 타이틀 – .text-wrapper-4 */
   .PC .text-wrapper-4 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
+    margin-top: -1px;
     font-family: var(--title-26-b-font-family);
     font-weight: var(--title-26-b-font-weight);
     color: var(--graywhite);
-    font-size: var(--title-26-b-font-size);
-    letter-spacing: var(--title-26-b-letter-spacing);
-    line-height: var(--title-26-b-line-height);
+    /* PC 폰트 크기에 비해 모바일은 약 32px */
+    font-size: 32px;
     white-space: nowrap;
-    font-style: var(--title-26-b-font-style);
   }
-  
-  .PC .union-2 {
-    position: absolute;
-    width: 202px;
-    height: 188px;
-    top: 226px;
-    left: 169px;
-  }
-  
+
+  /* 섹션 컨테이너 – .frame-9 */
   .PC .frame-9 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    padding: 100px 0px;
-    position: relative;
-    align-self: stretch;
+    gap: 60px;
+    padding: 80px 0;
     width: 100%;
-    flex: 0 0 auto;
     background-color: #1c1d24;
-  }
-  
-  .PC .rectangle {
-    position: absolute;
-    width: 226px;
-    height: 60px;
-    top: 104px;
-    left: 917px;
-  }
-  
-  .PC .frame-10 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
     position: relative;
     flex: 0 0 auto;
   }
-  
+
+  /* (하단 안내 관련) 섹션 내 안내 텍스트 – .text-wrapper-5, .text-wrapper-6 */
   .PC .text-wrapper-5 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
+    margin-top: -1px;
     font-family: "Gmarket Sans TTF-Bold", Helvetica;
     font-weight: 700;
     color: var(--graywhite);
-    font-size: 50px;
+    /* PC: 50px → 모바일: 약 36px */
+    font-size: 36px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: 70.0px;
     white-space: nowrap;
   }
-  
   .PC .text-wrapper-6 {
     position: relative;
-    width: fit-content;
     font-family: var(--body-15-r-font-family);
     font-weight: var(--body-15-r-font-weight);
     color: #6f6f76;
-    font-size: var(--body-15-r-font-size);
+    /* PC: 18px → 모바일: 약 16px */
+    font-size: 16px;
     text-align: center;
-    letter-spacing: var(--body-15-r-letter-spacing);
-    line-height: var(--body-15-r-line-height);
     white-space: nowrap;
-    font-style: var(--body-15-r-font-style);
   }
-  .frame-10{
-    color:white;
-  }
+
+  /* 섹션 내 파트너 안내 – .frame-11, .frame-12 등 */
   .PC .frame-11 {
     display: flex;
-    width: 1140px;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #1d1e25;
     position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .frame-12 {
     display: flex;
     flex-direction: column;
-    width: 350px;
     align-items: center;
     gap: 40px;
-    position: relative;
-  }
-  
-  .PC .div-2 {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    background-color: #32343d;
-    border-radius: 120px;
-  }
-  
-  .PC .group-2 {
-    position: relative;
-    width: 100px;
-    height: 128px;
-    top: 56px;
-    left: 70px;
-    background-image: url(./img/Group_25@1x.png);
-    background-size: 100% 100%;
-  }
-  
-  .PC .vector-2 {
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    top: 0;
-    left: 81px;
-  }
-  
-  .PC .frame-13 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-    position: absolute;
-    top: 61px;
-    left: 22px;
-  }
-  
-  .PC .frame-14 {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .ellipse-2 {
-    position: relative;
-    width: 6px;
-    height: 6px;
-    background-color: var(--graygy-600);
-    border-radius: 3px;
-  }
-  
-  .PC .rectangle-2 {
-    position: relative;
-    width: 43px;
-    height: 4px;
-    background-color: var(--graygy-600);
-  }
-  
-  .PC .google-logo-svg {
-    position: absolute;
-    width: 58px;
-    height: 20px;
-    top: 30px;
-    left: 21px;
-    object-fit: cover;
-  }
-  
-  .PC .frame-15 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .text-wrapper-7 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Sandoll MiSaeng-Regular", Helvetica;
-    font-weight: 400;
-    color: #9071ff;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .PC .text-wrapper-8 {
-    position: relative;
-    width: fit-content;
-    font-family: "Pretendard-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--graygy-100);
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 28.8px;
-  }
-  
-  .PC .overlap-group-wrapper {
-    position: relative;
-    width: 242px;
-    height: 240px;
-  }
-  
-  .PC .rectangle-3 {
-    position: absolute;
-    width: 128px;
-    height: 80px;
-    top: 80px;
-    left: 56px;
-    background-color: #32bb7d;
-    border: 8px solid;
-    border-color: #0d915d;
-  }
-  
-  .PC .text-wrapper-9 {
-    position: absolute;
-    top: 105px;
-    left: 87px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: #0a5721;
-    font-size: 26px;
-    text-align: center;
-    letter-spacing: 1.04px;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .PC .group-3 {
-    position: relative;
-    width: 102px;
-    height: 103px;
-    top: 61px;
-    left: 70px;
-  }
-  
-  .PC .overlap-group {
-    position: relative;
-    width: 100px;
-    height: 101px;
-    top: 2px;
-  }
-  .frame-28{
-    color:white;
-  }
-  .frame-11{
-    color:white;
-  }
-  .PC .vector-3 {
-    position: absolute;
-    width: 100px;
-    height: 39px;
-    top: 39px;
-    left: 0;
-  }
-  
-  .PC .vector-4 {
-    position: absolute;
-    width: 100px;
-    height: 39px;
-    top: 0;
-    left: 0;
-  }
-  
-  .PC .text-wrapper-10 {
-    position: absolute;
-    width: 31px;
-    top: 19px;
-    left: 34px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: var(--graywhite);
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 1.20px;
-    line-height: normal;
-  }
-  
-  .PC .frame-16 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    padding: 100px 0px 140px;
-    position: relative;
-    align-self: stretch;
     width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .PC .text-wrapper-11 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: var(--graygy-900);
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 70.0px;
-    white-space: nowrap;
   }
-  
-  .PC .line {
-    position: absolute;
-    width: 1px;
-    height: 1483px;
-    top: 262px;
-    left: 654px;
-    background-color: var(--graygy-300);
-  }
-  
+
+  /* (번호와 세션) .frame-17 ~ .frame-19, .line 등 */
   .PC .frame-17 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-18 {
     display: flex;
-    width: 648px;
-    align-items: flex-start;
-    gap: 60px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-19 {
-    display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 6px 5px;
+    align-items: flex-start;
+    gap: 60px; /* PC: 80px → 모바일: 60px */
     position: relative;
     flex: 0 0 auto;
-    background-color: #6131f0;
-    border-radius: 50px;
-  }
-  
-  .PC .text-wrapper-12 {
-    position: relative;
-    width: 24px;
-    margin-top: -1.00px;
-    font-family: var(--headline-18-b-font-family);
-    font-weight: var(--headline-18-b-font-weight);
-    color: var(--graywhite);
-    font-size: var(--headline-18-b-font-size);
-    text-align: center;
-    letter-spacing: var(--headline-18-b-letter-spacing);
-    line-height: var(--headline-18-b-line-height);
-    font-style: var(--headline-18-b-font-style);
-  }
-  
+    padding-left: 10px;
+  } 
+
+  /* 세션 상세 설명 – .frame-20, .frame-21, .text-wrapper-13, .rectangle-5, .frame-22, .ellipse-3, .frame-23, .text-wrapper-14, .text-wrapper-15 */
   .PC .frame-20 {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .frame-21 {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     position: relative;
-    flex: 0 0 auto;
+    flex: 0 0 auto; 
   }
-  
   .PC .text-wrapper-13 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
+    margin-top: -1px;
     font-family: var(--title-22-b-font-family);
     font-weight: var(--title-22-b-font-weight);
     color: var(--graygy-900);
-    font-size: var(--title-22-b-font-size);
-    letter-spacing: var(--title-22-b-letter-spacing);
-    line-height: var(--title-22-b-line-height);
+    /* PC:  ? → 모바일: 약 18px */
+    font-size: 18px;
     white-space: nowrap;
-    font-style: var(--title-22-b-font-style);
   }
-  
   .PC .rectangle-5 {
     position: relative;
     width: 1px;
     height: 14px;
     background-color: var(--graygy-400);
   }
-  
   .PC .frame-22 {
     display: flex;
     align-items: center;
     gap: 16px;
-    position: relative;
-    align-self: stretch;
     width: 100%;
+    position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .ellipse-3 {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px; /* PC: 50px → 모바일: 40px */
+    height: 40px;
     border-radius: 50%;
   }
-  
   .PC .frame-23 {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     gap: 2px;
     position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .text-wrapper-14 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
+    margin-top: -1px;
     font-family: var(--body-15-SB-font-family);
     font-weight: var(--body-15-SB-font-weight);
     color: var(--graygy-800);
-    font-size: var(--body-15-SB-font-size);
-    letter-spacing: var(--body-15-SB-letter-spacing);
-    line-height: var(--body-15-SB-line-height);
+    font-size: 16px;
     white-space: nowrap;
-    font-style: var(--body-15-SB-font-style);
   }
-  
   .PC .text-wrapper-15 {
     position: relative;
-    width: fit-content;
     font-family: var(--body-15-r-font-family);
     font-weight: var(--body-15-r-font-weight);
     color: var(--graygy-800);
-    font-size: var(--body-15-r-font-size);
-    letter-spacing: var(--body-15-r-letter-spacing);
-    line-height: var(--body-15-r-line-height);
+    font-size: 16px;
     white-space: nowrap;
-    font-style: var(--body-15-r-font-style);
   }
-  
-  .PC .frame-24 {
-    display: flex;
-    width: 380px;
-    align-items: center;
-    gap: 60px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-25 {
-    display: flex;
-    width: 550px;
-    align-items: flex-start;
-    gap: 60px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-26 {
-    display: flex;
-    width: 647px;
-    align-items: flex-start;
-    gap: 60px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-27 {
-    display: flex;
-    width: 383px;
-    align-items: center;
-    gap: 60px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
+
+  /* 하단 LOCATION 영역 – .frame-28 ~ .frame-30 */
   .PC .frame-28 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    padding: 100px 0px 120px;
-    position: relative;
-    align-self: stretch;
+    gap: 40px;
+    padding: 80px 0;
     width: 100%;
-    flex: 0 0 auto;
     background-color: #111216;
-  }
-  
-  .PC .text-wrapper-16 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "Gmarket Sans TTF-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 70.0px;
-    white-space: nowrap;
+    flex: 0 0 auto;
   }
-  
   .PC .frame-29 {
     display: flex;
-    width: 1140px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
     position: relative;
     flex: 0 0 auto;
   }
-  
   .PC .rectangle-6 {
     position: relative;
-    width: 640px;
-    height: 380px;
+    max-width: 640px;
+    width: 100%;
+    padding: 10px;
   }
-  
   .PC .frame-30 {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 70px;
-    padding: 24px 0px 0px;
-    position: relative;
-    align-self: stretch;
-    flex: 0 0 auto;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
-  
-  .PC .frame-31 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-32 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-33 {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
+
+  /* LOCATION 텍스트 – .text-wrapper-17, .text-wrapper-18, .text-wrapper-19 */
   .PC .text-wrapper-17 {
     position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
     font-family: "Pretendard-Bold", Helvetica;
     font-weight: 700;
     color: var(--graywhite);
-    font-size: 34px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 28px;
+    white-space: nowrap;
   }
-  
   .PC .text-wrapper-18 {
     position: relative;
-    width: fit-content;
     font-family: "Pretendard-Bold", Helvetica;
     font-weight: 700;
     color: var(--graywhite);
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 24px;
     white-space: nowrap;
   }
-  
   .PC .text-wrapper-19 {
     position: relative;
-    width: fit-content;
     font-family: "Pretendard-Bold", Helvetica;
     font-weight: 700;
     color: var(--graywhite);
-    font-size: 26px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 20px;
     white-space: nowrap;
   }
-  
+
+  /* 하단 푸터 영역 – .frame-34, .frame-35 */
   .PC .frame-34 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .frame-35 {
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .PC .text-wrapper-20 {
-    color: var(--graygy-500);
-    text-align: center;
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: var(--headline-17-m-font-family);
-    font-weight: var(--headline-17-m-font-weight);
-    font-size: var(--headline-17-m-font-size);
-    letter-spacing: var(--headline-17-m-letter-spacing);
-    line-height: var(--headline-17-m-line-height);
-    white-space: nowrap;
-    font-style: var(--headline-17-m-font-style);
-  }
-  
-  .PC .text-wrapper-21 {
-    color: var(--graygy-300);
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: var(--headline-17-m-font-family);
-    font-weight: var(--headline-17-m-font-weight);
-    font-size: var(--headline-17-m-font-size);
-    letter-spacing: var(--headline-17-m-letter-spacing);
-    line-height: var(--headline-17-m-line-height);
-    white-space: nowrap;
-    font-style: var(--headline-17-m-font-style);
-  }
-  
-  .PC .frame-36 {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 16px 28px 17px;
-    position: relative;
-    align-self: stretch;
+    gap: 40px;
+    padding: 60px 20px;
     width: 100%;
-    flex: 0 0 auto;
-    background-color: #6131f0;
-    border-radius: 8px;
-  }
-  
-  .PC .text-wrapper-22 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: var(--headline-18-b-font-family);
-    font-weight: var(--headline-18-b-font-weight);
-    color: var(--graywhite);
-    font-size: var(--headline-18-b-font-size);
-    letter-spacing: var(--headline-18-b-letter-spacing);
-    line-height: var(--headline-18-b-line-height);
-    white-space: nowrap;
-    font-style: var(--headline-18-b-font-style);
-  }
-  
-  .PC .frame-37 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    padding: 100px 0px 120px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
     background-color: var(--graywhite);
-  }
-  
-  .PC .frame-38 {
-    display: flex;
-    width: 1140px;
-    align-items: center;
-    gap: 150px;
-    padding: 30px 0px 30px 120px;
     position: relative;
     flex: 0 0 auto;
+  }
+  .PC .frame-35 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    width: 100%;
     background-color: var(--graygy-100);
     border-radius: 12px;
-  }
-  
-  .PC .LOGO-AVISS {
     position: relative;
-    width: 185px;
-    height: 48px;
+    flex: 0 0 auto;
   }
-  
+
   .PC .AVISS {
     position: absolute;
-    width: 126px;
-    height: 32px;
-    top: 9px;
-    left: 59px;
+    width: 106px;
+    height: 27px;
+    top: 7px;
+    left: 50px;
   }
-  
-  .PC .LOGO-AVISS-2 {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 0;
-    left: 0;
-  }
-  
   .PC .hanbit-logo {
     position: relative;
-    width: 231px;
-    height: 38px;
+    width: 190px;
+    height: 31px;
     object-fit: cover;
   }
-  
   .PC .image {
     position: relative;
-    width: 68px;
-    height: 68px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
   }
+  img.vector-logo {
+    width: 100px;
+  }
+  .PC .text-wrapper {
+    font-size: 16px;
+  }
+  .PC .union-2 {
+    display: none;
+  }
+  .vector {
+    width: 90%;
+  }
+  .union {
+    width: 100px;
+  }
+  .frame-31 {
+    display: none;
+  }
+  .PC .frame-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 가운데 정렬을 원하면 center로 변경 */
+    gap: 8px; /* 각 요소 사이의 간격 */
+    align-items: center;
+  }
+  .ellipse {
+    display: none;
+  }
+  .picture {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .PC .text-wrapper-5 {
+    font-size: 30px;
+  }
+  .PC .text-wrapper-6 {
+    white-space: normal; /* 텍스트 줄바꿈 허용 */
+    line-height: 1.3;
+  } 
+  .PC .text-wrapper-13,
+  .PC .text-wrapper-14,
+  .PC .text-wrapper-15 {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  * {
+    box-sizing: border-box;
+  }
+ 
+
+  /* 텍스트 요소 줄바꿈 허용 */
+  .PC .text-wrapper-13,
+  .PC .text-wrapper-14,
+  .PC .text-wrapper-15 {
+    white-space: normal;
+    overflow-wrap: break-word;
+  } 
+  .PC .frame-16{
+    display: block;
+  }  
+  /* 부모 컨테이너(.frame-16)는 flex로 유지하여 자식들이 올바르게 배치되고, overflow가 보이도록 합니다. */
+  .PC .frame-16 {
+    display: flex;            /* block 대신 flex 유지 */
+    flex-direction: column;
+    width: 100%;
+    overflow: visible;        /* 자식 요소들이 잘리지 않도록 */
+  } 
+
+  /* 관련 텍스트 요소가 줄바꿈되도록 재정의 */
+  .PC .text-wrapper-13,
+  .PC .text-wrapper-14,
+  .PC .text-wrapper-15 {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
   
+  /* 필요 시 .line의 위치도 조정 */
+  .PC .line {
+    left: 25px; /* 왼쪽 여백에 맞게 조정 (원하는 값으로 수정) */
+    top: 34px;
+  }
+  .PC .frame-24{
+    width: 100%;
+    gap:10px;
+  }
+  .PC .frame-18{ 
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .PC .frame-17 {
+    /* 고정 flex-basis 대신 전체 너비를 사용 */
+    width: 100%;
+    padding-left: 10px;  /* 왼쪽 여백은 유지 */
+    box-sizing: border-box;
+    flex-shrink: 1;      /* 자식 요소들이 필요 시 축소 허용 */
+    overflow: visible;
+  }
+  
+  /* 텍스트 요소 줄바꿈 허용 (이미 적용되어 있다면 중복 없이 확인) */
+  .PC .text-wrapper-13,
+  .PC .text-wrapper-14,
+  .PC .text-wrapper-15 {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  .PC .frame-20{
+    width: 300px;
+  }
+  .PC .text-wrapper-15{ 
+    width: 300px;
+  }
+  .PC .frame-25 { 
+    width: 100%; 
+    gap: 10px; 
+  }
+  .PC .frame-26, .PC .frame-27{
+    gap:10px;
+  } 
+}

@@ -756,6 +756,8 @@
   justify-content: space-between;
   position: relative;
   flex: 0 0 auto;
+  
+  gap: 20px;
 }
 
 .PC .rectangle-6 {
@@ -917,7 +919,7 @@
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  padding: 100px 0px 120px;
+  padding: 100px 0px 10px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -992,7 +994,9 @@ picture {
   position: relative;
   margin-bottom: 30px; /* 세션 사이 간격 */
 }
-
+.text-wrapper-23{
+  font-family: 'Courier New', Courier, monospace; 
+}
 .frame-19 {
   width: 30px;
   height: 30px;
@@ -1661,4 +1665,10 @@ picture {
   .PC .frame-26, .PC .frame-27{
     gap:10px;
   } 
+  .PC .frame-33{
+    display: block;
+  }
+  .zzzzz{
+    display: none;
+  }
 }

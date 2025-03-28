@@ -29,6 +29,9 @@
   flex: 0 0 auto;
   background-color: #010101;
 }
+.frame-38 img{
+  max-width: 185px;
+}
 
 .main {
   color: white;

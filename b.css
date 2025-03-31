@@ -1675,3 +1675,6 @@ picture {
     display: none;
   }
 }
+.gpt-pic img{
+  width:300px;
+}

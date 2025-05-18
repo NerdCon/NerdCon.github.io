@@ -1678,3 +1678,27 @@ picture {
 .gpt-pic img{
   width:300px;
 }
+
+
+.btn-nerdcon {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5022C3;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-nerdcon:hover {
+  background-color: #3a18a5;
+  transform: translateY(-2px);
+}
+
+.btn-nerdcon:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
